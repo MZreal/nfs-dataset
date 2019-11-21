@@ -71,7 +71,7 @@ nfsServer.addService(pg.Execute(shell="sh", command="sudo /bin/bash /local/repos
 
 # Special node that represents the ISCSI device where the dataset resides
 dsnode = request.RemoteBlockstore("dsnode", nfsDirectory)
-dsnode.dataset = "urn:publicid:IDN+wisc.cloudlab.us:powerbound-pg0+ltdataset+zou_data"
+dsnode.dataset = "urn:publicid:IDN+wisc.cloudlab.us:reese-pg0+ltdataset+20gputest"
 
 # Link between the nfsServer and the ISCSI device that holds the dataset
 dslink = request.Link("dslink")
